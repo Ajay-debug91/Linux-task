@@ -1,5 +1,30 @@
 # Linux-task
-1️⃣ Create directory, enter it, and create files
+ls        # files list
+pwd       # current path
+cd        # change directory
+touch     # create file
+mkdir     # create folder
+rm        # delete
+clear     # clean screen
+
+| Action   | Shortcut   |
+| -------- | ---------- |
+| Zoom In  | `Ctrl + +` |
+| Zoom Out | `Ctrl + -` |
+| Reset    | `Ctrl + 0` |
+
+Ctrl + Mouse Scroll Up → Zoom In
+
+Ctrl + Mouse Scroll Down → Zoom Out
+
+| Symbol | Number | Meaning |
+| ------ | ------ | ------- |
+| r      | 4      | read    |
+| w      | 2      | write   |
+| x      | 1      | execute |
+
+
+1️⃣ Create a directory, enter it, and create files
 mkdir my_folder
 cd my_folder
 
@@ -24,7 +49,7 @@ touch file{1..20}.txt
 Verify:
 ls *.txt
 
-5️⃣ Rename first 5 files from .txt to .yml
+5️⃣ Rename the first 5 files from .txt to .yml
 for i in {1..5}
 do
   mv file$i.txt file$i.yml
@@ -33,10 +58,11 @@ done
 Verify:
 ls
 
-6️⃣ Print latest created top 5 files
+6️⃣ Print the latest created top 5 files
 ls -lt | head -n 6
 
 ✅ Final Output Summary
+<img width="963" height="207" alt="image" src="https://github.com/user-attachments/assets/6a3b9043-46f9-4667-9980-12344876ee46" />
 
 ✔ Directory created
 ✔ Files created
